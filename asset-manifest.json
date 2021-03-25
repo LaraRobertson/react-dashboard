@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-dashboard/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/react-dashboard/static/js/main.71ac3799.chunk.js",
-    "main.js.map": "/react-dashboard/static/js/main.71ac3799.chunk.js.map",
-    "runtime-main.js": "/react-dashboard/static/js/runtime-main.5e31442e.js",
-    "runtime-main.js.map": "/react-dashboard/static/js/runtime-main.5e31442e.js.map",
-    "static/js/2.37797628.chunk.js": "/react-dashboard/static/js/2.37797628.chunk.js",
-    "static/js/2.37797628.chunk.js.map": "/react-dashboard/static/js/2.37797628.chunk.js.map",
-    "static/js/3.b7dde5ba.chunk.js": "/react-dashboard/static/js/3.b7dde5ba.chunk.js",
-    "static/js/3.b7dde5ba.chunk.js.map": "/react-dashboard/static/js/3.b7dde5ba.chunk.js.map",
-    "index.html": "/react-dashboard/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/react-dashboard/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.37797628.chunk.js.LICENSE.txt": "/react-dashboard/static/js/2.37797628.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/react-dashboard/static/media/logo.6ce24c58.svg"
+    "main.css": "/LaraRobertson/react-dashboard/blob/gh-pages/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/LaraRobertson/react-dashboard/blob/gh-pages/static/js/main.71ac3799.chunk.js",
+    "main.js.map": "/LaraRobertson/react-dashboard/blob/gh-pages/static/js/main.71ac3799.chunk.js.map",
+    "runtime-main.js": "/LaraRobertson/react-dashboard/blob/gh-pages/static/js/runtime-main.0d1506be.js",
+    "runtime-main.js.map": "/LaraRobertson/react-dashboard/blob/gh-pages/static/js/runtime-main.0d1506be.js.map",
+    "static/js/2.37797628.chunk.js": "/LaraRobertson/react-dashboard/blob/gh-pages/static/js/2.37797628.chunk.js",
+    "static/js/2.37797628.chunk.js.map": "/LaraRobertson/react-dashboard/blob/gh-pages/static/js/2.37797628.chunk.js.map",
+    "static/js/3.b7dde5ba.chunk.js": "/LaraRobertson/react-dashboard/blob/gh-pages/static/js/3.b7dde5ba.chunk.js",
+    "static/js/3.b7dde5ba.chunk.js.map": "/LaraRobertson/react-dashboard/blob/gh-pages/static/js/3.b7dde5ba.chunk.js.map",
+    "index.html": "/LaraRobertson/react-dashboard/blob/gh-pages/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/LaraRobertson/react-dashboard/blob/gh-pages/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.37797628.chunk.js.LICENSE.txt": "/LaraRobertson/react-dashboard/blob/gh-pages/static/js/2.37797628.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/LaraRobertson/react-dashboard/blob/gh-pages/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5e31442e.js",
+    "static/js/runtime-main.0d1506be.js",
     "static/js/2.37797628.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
     "static/js/main.71ac3799.chunk.js"
