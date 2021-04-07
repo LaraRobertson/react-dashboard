@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/LaraRobertson/react-dashboard/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/LaraRobertson/react-dashboard/static/js/main.e11470b2.chunk.js",
-    "main.js.map": "/LaraRobertson/react-dashboard/static/js/main.e11470b2.chunk.js.map",
-    "runtime-main.js": "/LaraRobertson/react-dashboard/static/js/runtime-main.62b0e62e.js",
-    "runtime-main.js.map": "/LaraRobertson/react-dashboard/static/js/runtime-main.62b0e62e.js.map",
-    "static/js/2.0416552f.chunk.js": "/LaraRobertson/react-dashboard/static/js/2.0416552f.chunk.js",
-    "static/js/2.0416552f.chunk.js.map": "/LaraRobertson/react-dashboard/static/js/2.0416552f.chunk.js.map",
-    "static/js/3.e8d7e73e.chunk.js": "/LaraRobertson/react-dashboard/static/js/3.e8d7e73e.chunk.js",
-    "static/js/3.e8d7e73e.chunk.js.map": "/LaraRobertson/react-dashboard/static/js/3.e8d7e73e.chunk.js.map",
+    "main.js": "/LaraRobertson/react-dashboard/static/js/main.d7d8ceb1.chunk.js",
+    "main.js.map": "/LaraRobertson/react-dashboard/static/js/main.d7d8ceb1.chunk.js.map",
+    "runtime-main.js": "/LaraRobertson/react-dashboard/static/js/runtime-main.b6913653.js",
+    "runtime-main.js.map": "/LaraRobertson/react-dashboard/static/js/runtime-main.b6913653.js.map",
+    "static/js/2.981caff3.chunk.js": "/LaraRobertson/react-dashboard/static/js/2.981caff3.chunk.js",
+    "static/js/2.981caff3.chunk.js.map": "/LaraRobertson/react-dashboard/static/js/2.981caff3.chunk.js.map",
+    "static/js/3.f51f9bd8.chunk.js": "/LaraRobertson/react-dashboard/static/js/3.f51f9bd8.chunk.js",
+    "static/js/3.f51f9bd8.chunk.js.map": "/LaraRobertson/react-dashboard/static/js/3.f51f9bd8.chunk.js.map",
     "index.html": "/LaraRobertson/react-dashboard/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/LaraRobertson/react-dashboard/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.0416552f.chunk.js.LICENSE.txt": "/LaraRobertson/react-dashboard/static/js/2.0416552f.chunk.js.LICENSE.txt"
+    "static/js/2.981caff3.chunk.js.LICENSE.txt": "/LaraRobertson/react-dashboard/static/js/2.981caff3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.62b0e62e.js",
-    "static/js/2.0416552f.chunk.js",
+    "static/js/runtime-main.b6913653.js",
+    "static/js/2.981caff3.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.e11470b2.chunk.js"
+    "static/js/main.d7d8ceb1.chunk.js"
   ]
 }
