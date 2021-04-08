@@ -1,13 +1,16 @@
 {
-  "Post": {
-    "title": "string",
-    "views": "int",
-    "published": "boolean",
+  "Device": {
+    "userID": "int",
+    "name": "string",
+    "status": "int",
+    "ipAddress": "string",
     "createdAt": "date",
     "comments": "Comment[]"
   },
-  "Comment": {
-    "body": "string",
-    "post": "Post"
+  "User": {
+    "userID": "int",
+    "firstName": "string",
+    "lastName": "string",
+    "location": "string"
   }
 }
