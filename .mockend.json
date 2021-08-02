@@ -1,0 +1,16 @@
+{
+  "Device": {
+    "userID": "int",
+    "name": "string",
+    "status": "int",
+    "ipAddress": "string",
+    "createdAt": "date",
+    "comments": "Comment[]"
+  },
+  "User": {
+    "userID": "int",
+    "firstName": "string",
+    "lastName": "string",
+    "location": "string"
+  }
+}
