@@ -1,5 +1,5 @@
 /**
- * Created by lara on 3/26/2021.
+ * Created by lara on 7/22/2021.
  */
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 const Header = () => {
     const classes = useStyles();
     return (
-        <h1 className={classes.h1}>Wahsega Dashboard</h1>
+        <h1 className={classes.h1}>Wahsega React Dashboard!</h1>
     );
 };
 
