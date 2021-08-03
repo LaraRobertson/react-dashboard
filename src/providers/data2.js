@@ -5,13 +5,13 @@
 
 export default {
     zoneendpoint: [
-        { id: 1, zone_id: 1, label: "zone 1", endpoint_id: 1, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
-        { id: 2, zone_id: 2, label: "zone 2", endpoint_id: 1, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
-        { id: 3, zone_id: 3, label: "zone 3", endpoint_id: 1, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
-        { id: 4, zone_id: 1, label: "zone 1", endpoint_id: 2, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
-        { id: 5, zone_id: 4, label: "zone 4", endpoint_id: 2, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
-        { id: 6, zone_id: 5, label: "zone 5", endpoint_id: 3, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
-        { id: 7, zone_id: 6, label: "zone 6", endpoint_id: 3, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
+        { id: 1, user_id: 1, zone_id: 1, label: "zone 1", endpoint_id: 1, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
+        { id: 2, user_id: 1, zone_id: 2, label: "zone 2", endpoint_id: 1, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
+        { id: 3, user_id: 1, zone_id: 3, label: "zone 3", endpoint_id: 1, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
+        { id: 4, user_id: 1, zone_id: 1, label: "zone 1", endpoint_id: 2, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
+        { id: 5, user_id: 1, zone_id: 4, label: "zone 4", endpoint_id: 2, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
+        { id: 6, user_id: 2, zone_id: 5, label: "zone 5", endpoint_id: 3, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
+        { id: 7, user_id: 2, zone_id: 6, label: "zone 6", endpoint_id: 3, active: true, create_date: "2021-07-29T15:22:40.000Z", update_date: "2021-07-29T15:22:40.000Z"},
 
 
     ],

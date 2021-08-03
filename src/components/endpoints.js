@@ -25,9 +25,7 @@ const useStyles = makeStyles({
     },
 });
 
-const authUserUID = localStorage.getItem('UID');
-const authEmail = localStorage.getItem('Email');
-console.log("uid:" + authUserUID);
+const userID= localStorage.getItem('userID');
 
 const MyEditButton = props => {
     const classes = useStyles();
@@ -39,7 +37,8 @@ const MyEditButton = props => {
 export const EndpointList = props => {
     const isSmall = useMediaQuery(theme => theme.breakpoints.down('sm'));
     return (
-        <List {...props} title="Devices Title">
+        <List {...props} title="Devices Title" filter={{user_id: userID}}
+        >
 
             {isSmall ? (
                 <SimpleList
@@ -66,7 +65,7 @@ export const EndpointList = props => {
         </List>
     );
 };
-export const PostEditEndpoint = props => (
+export const EndpointEdit = props => (
     <Edit {...props} title="Edit Endpoint">
         <SimpleForm>
             <TextInput disabled source='id' />

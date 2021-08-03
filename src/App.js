@@ -3,14 +3,15 @@
  */
 import React from 'react';
 import {Admin, Resource, ListGuesser, EditGuesser, AppBar, UserMenu, MenuItemLink, Layout} from 'react-admin';
-import {UserList} from "./components/users";
+import {UserList, UserEdit} from "./components/users";
 import { Route } from "react-router";
 import Header from "./components/Header";
 import authProvider from "./providers/authProvider";
 import dataProvider from "./providers/dataProvider";
 import Dashboard from "./components/Dashboard";
-import {EndpointList,PostEditEndpoint} from "./components/endpoints";
-import {ZoneList,PostEditZone} from "./components/zones";
+import {EndpointList,EndpointEdit} from "./components/endpoints";
+import {CampusList,CampusEdit} from "./components/campuses";
+import {ZoneList,ZoneEdit,ZoneCreate} from "./components/zones";
 import GroupIcon from '@material-ui/icons/Group';
 import { createMuiTheme } from '@material-ui/core/styles';
 import MyUserMenu from './components/MyUserMenu';
@@ -64,11 +65,10 @@ function App() {
                 />,
             ]}>
             <Header/>
-            <Resource name="zoneendpoint" list={ZoneList}  edit={PostEditZone} options={{ label: 'Zones' }}/>
-            <Resource name="users" list={UserList} icon={GroupIcon}/>
-            <Resource name="profile" list={ListGuesser}/>
-            <Resource name="endpoint" options={{ label: 'Endpoints' }} list={EndpointList} edit={PostEditEndpoint}/>
-            <Resource name="campus" list={ListGuesser}/>
+            <Resource name="zoneendpoint" list={ZoneList}  edit={ZoneEdit} create={ZoneCreate} options={{ label: 'Zones' }}/>
+            <Resource name="users" list={UserList}  edit={UserEdit} icon={GroupIcon}/>
+            <Resource name="endpoint" options={{ label: 'Endpoints' }} list={EndpointList} edit={EndpointEdit}/>
+            <Resource name="campus" list={CampusList}  edit={CampusEdit} />
 
         </Admin>
     );

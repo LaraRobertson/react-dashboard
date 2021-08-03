@@ -8,6 +8,7 @@ import CustomTextField from "./CustomTextField";
 import CustomNumberField from "./CustomNumberField";
 import CustomLinkField from "./CustomLinkField";
 import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     button: {
@@ -25,7 +26,7 @@ const useStyles = makeStyles({
 });
 
 const authUserUID = localStorage.getItem('UID');
-const authEmail = localStorage.getItem('Email');
+const userID= localStorage.getItem('userID');
 console.log("uid:" + authUserUID);
 
 const MyEditButton = props => {
@@ -39,7 +40,7 @@ const ZoneFilter = props => {
         <Filter {...props} classes={classes}>
             <TextInput label="Search1" source="q" alwaysOn className={classes.searchInput}/>
 
-            <ReferenceArrayInput source="endpoint_id" alwaysOn reference="endpoint">
+            <ReferenceArrayInput source="endpoint_id" alwaysOn reference="endpoint" filter={{user_id: userID}}>
                 <SelectArrayInput optionText="name" />
             </ReferenceArrayInput>
         </Filter>
@@ -47,11 +48,19 @@ const ZoneFilter = props => {
     );
 };
 //after title in <list: filter={{userID: authUserUID}}
+const Aside = () => (
+    <div style={{ width: 200, margin: '1em' }}>
+        <Typography variant="h6">Zone details</Typography>
+        <Typography variant="body2">
+           Zones can only be added to Endpoints you control.
+        </Typography>
+    </div>
+);
 
 export const ZoneList = props => {
     const isSmall = useMediaQuery(theme => theme.breakpoints.down('sm'));
     return (
-        <List {...props} title="Zones"  filters={<ZoneFilter />}>
+        <List {...props} title="Zones"  filter={{user_id: userID}} filters={<ZoneFilter />}>
 
             {isSmall ? (
                 <SimpleList
@@ -76,7 +85,7 @@ export const ZoneList = props => {
         </List>
     );
 };
-export const PostEditZone = props => (
+export const ZoneEdit= props => (
     <Edit {...props} title="Edit Zone">
         <SimpleForm>
             <TextInput disabled source='id' />
@@ -93,18 +102,13 @@ export const PostEditZone = props => (
         </SimpleForm>
     </Edit>
 );
-export const PostCreateZone = props => (
-    <Create {...props}>
+
+export const ZoneCreate = (props) => (
+    <Create {...props}   aside={<Aside />} >
         <SimpleForm>
-            <TextInput source="id"/>
-            <TextInput source="label"/>
-            <SelectInput
-                source='active'
-                choices={[
-                    { id: 'true', name: 'true' },
-                    { id: 'false', name: 'false' },
-                ]}
-            />
+            <ReferenceInput source="id" label="Endpoint ID" reference="endpoint"><SelectInput optionText="id"/></ReferenceInput>
+            <TextInput source="label" />
+            <DateInput label="creation date" source="create_date" defaultValue={new Date()} />
         </SimpleForm>
     </Create>
 );

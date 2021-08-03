@@ -15,7 +15,7 @@ const CustomLinkField = ({ record = {}, source }) => {
     const classes = useStyles();
     const href = "#/custom/" + record[source];
     return (
-        <span className={classes.textStyle}><a href={href}>Zones - {record[source]}</a></span>
+        <span className={classes.textStyle}><a href={href}>Zones</a></span>
     );
 };
 

@@ -44,7 +44,7 @@ const DeviceList = props => {
     return (
         <ThemeProvider theme={theme}>
             <h1>{endpointTitle}</h1>
-            <div><span className={classes.button} >Zones  |</span><span>   link 2</span></div>
+            <div><span className={classes.button} >Zones  |</span><span>   link 2 | link 3 </span></div>
             <List {...props} className={classes.table}  basePath={props.path} resource="endpoint" title="->" pagination={false} exporter={false} filter={{id: endpointID}}>
 
 
@@ -55,7 +55,7 @@ const DeviceList = props => {
                     />
 
             </List>
-        <List {...props} title="Zones" basePath={props.path} resource="zoneendpoint" filter={{endpoint_id: endpointID}}>
+        <List {...props} title="Zones"  basePath={props.path} resource="zoneendpoint" filter={{endpoint_id: endpointID}}>
 
             {isSmall ? (
                 <SimpleList
@@ -67,7 +67,7 @@ const DeviceList = props => {
                 />
 
             ) : (
-                <Datagrid rowClick="edit">
+                <Datagrid  hasCreate={false} bulkActionButtons={false}>
                     <CustomTextField source="zone_id"/>
                     <CustomTextField source="label"/>
                 </Datagrid>

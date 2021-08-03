@@ -13,7 +13,6 @@ import { useDataProvider, useQuery, Loading, Error } from 'react-admin';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from "./Header";
 import DashboardInfo from "./DashboardInfo";
-import DashboardInfo2 from "./DashboardInfo2";
 const useStyles = makeStyles({
     button: {
         fontWeight: 'bold',
@@ -25,7 +24,8 @@ const useStyles = makeStyles({
     },
 });
 
-const authUserUID = localStorage.getItem('UID')
+const authUserUID = localStorage.getItem('UID');
+
 const payload = {
     pagination: { page: 1, perPage: 10 },
     sort: { field: 'name', order: 'ASC' },
@@ -47,6 +47,7 @@ const UserProfile = () => {
     if (loading) return <Loading />;
     if (error) return <Error />;
     if (!data) return null;
+
 
     return (
         <div>
@@ -70,6 +71,9 @@ const EndpointStatus = () => {
     if (loading) return <Loading />;
     if (error) return <Error />;
     if (!data) return null;
+    const userID = data[0].id;
+    console.log("userID: " + userID);
+    localStorage.setItem('userID',  userID);
 
     return (
         <div>
@@ -82,7 +86,7 @@ const EndpointStatus = () => {
     )
 };
 const Dashboard = () => {
-    const authUserUID = localStorage.getItem('UID');
+
     const classes = useStyles();
     return (
 
@@ -90,6 +94,7 @@ const Dashboard = () => {
             <CardHeader title="Welcome to the Dashboard" />
             <CardContent>
             <DashboardInfo/>
+
             <EndpointStatus />
             </CardContent>
             <Header/>
