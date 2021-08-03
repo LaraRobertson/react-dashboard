@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/LaraRobertson/react-dashboard/static/css/main.d4338f89.chunk.css",
-    "main.js": "/LaraRobertson/react-dashboard/static/js/main.d0e592c8.chunk.js",
-    "main.js.map": "/LaraRobertson/react-dashboard/static/js/main.d0e592c8.chunk.js.map",
+    "main.js": "/LaraRobertson/react-dashboard/static/js/main.c3533f76.chunk.js",
+    "main.js.map": "/LaraRobertson/react-dashboard/static/js/main.c3533f76.chunk.js.map",
     "runtime-main.js": "/LaraRobertson/react-dashboard/static/js/runtime-main.f9456ae6.js",
     "runtime-main.js.map": "/LaraRobertson/react-dashboard/static/js/runtime-main.f9456ae6.js.map",
     "static/js/2.86c321a3.chunk.js": "/LaraRobertson/react-dashboard/static/js/2.86c321a3.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f9456ae6.js",
     "static/js/2.86c321a3.chunk.js",
     "static/css/main.d4338f89.chunk.css",
-    "static/js/main.d0e592c8.chunk.js"
+    "static/js/main.c3533f76.chunk.js"
   ]
 }
