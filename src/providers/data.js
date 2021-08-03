@@ -6,7 +6,7 @@
 const data = {
     users: [
         { id: 1, uid: "c65fqPy9WrThUgaq9FfwmeTUtr33", email: "test1@email.com", phone: "912-111-2222", name: "Test1 Email"},
-        { id: 2, uid: "tsq2HmYZHSeIpS9X3lnmOvyGHRl1", email: "test2@email.com", phone: "912-333-4444", name: "Test2 Email"},
+        { id: 2, uid: "kjLOzhwY3hQXGyO9fcoeabvibFz2", email: "test2@email.com", phone: "912-333-4444", name: "Test2 Email"},
     ],
     campus: [
         { id: 1, name: "campus 1", location: "Georgia", phone: "404-123-4567", active: 1, user_id: 1, create_date: "2021-07-22 12:15:06", update_date: '2021-07-22 12:15:06'},

@@ -47,11 +47,20 @@ export default (data, data2, data1, loggingEnabled = false): DataProvider => {
     }
 
     function getResponse(type, resource, params, data, data1, data3) {
-        console.log("data-response", data);
+        const authUserUID = localStorage.getItem('UID');
+        for (let i = 0; i < data.users.length; i++) {
+            if (data.users[i].uid === authUserUID) {
+                console.log("data.user: " + data.users[i].id);
+                localStorage.setItem('userID', data.users[i].id);
+            }
+        };
+        console.log("data-response", data.users[0]);
         console.log("data11111-response", data1);
         console.log("data2-response", data2);
         console.log("type-getResponse: ", type);
         console.log("resource: ", resource);
+        //set user in local storage based on auth id - secure?
+
         const restServer = new FakeRest.Server();
         if (resource === "endpoint") {
             restServer.init(data2);
@@ -182,6 +191,7 @@ export default (data, data2, data1, loggingEnabled = false): DataProvider => {
         if (loggingEnabled) {
             log(type, resource, params, response);
         }
+
         return Promise.resolve(response);
     };
 

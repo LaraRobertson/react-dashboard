@@ -25,19 +25,22 @@ const useStyles = makeStyles({
 });
 
 const authUserUID = localStorage.getItem('UID');
+const userID = localStorage.getItem('userID');
+
+const payload2 = {
+    pagination: { page: 1, perPage: 10 },
+    sort: { field: 'name', order: 'ASC' },
+    filter:{user_id: userID, status_lte: 4}
+};
 
 const payload = {
     pagination: { page: 1, perPage: 10 },
     sort: { field: 'name', order: 'ASC' },
-    filter:{uid: authUserUID}
+    filter:{id: userID}
 };
-const payload2 = {
-    pagination: { page: 1, perPage: 10 },
-    sort: { field: 'name', order: 'ASC' },
-    filter:{user_id: 1, status_lte: 4}
-};
+
 const UserProfile = () => {
-    const { data, total, loading, error } = useQuery({
+    const { data, loading, error } = useQuery({
         type: 'getList',
         resource: 'users',
         payload: payload
@@ -51,15 +54,15 @@ const UserProfile = () => {
 
     return (
         <div>
-            <p>Total users: {total}</p>
             <ul>
            {data.map
-           (user => <li key={user.name}>{user.name} | {user.email}</li>)}
+           (user => <li key={user.name}>name: {user.name} | {user.email}</li>)}
             </ul>
             </div>
     )
 };
 const EndpointStatus = () => {
+
     const { data, total, loading, error } = useQuery({
         type: 'getList',
         resource: 'endpoint',
@@ -71,9 +74,7 @@ const EndpointStatus = () => {
     if (loading) return <Loading />;
     if (error) return <Error />;
     if (!data) return null;
-    const userID = data[0].id;
-    console.log("userID: " + userID);
-    localStorage.setItem('userID',  userID);
+
 
     return (
         <div>
@@ -93,8 +94,7 @@ const Dashboard = () => {
         <Card>
             <CardHeader title="Welcome to the Dashboard" />
             <CardContent>
-            <DashboardInfo/>
-
+            <UserProfile/>
             <EndpointStatus />
             </CardContent>
             <Header/>

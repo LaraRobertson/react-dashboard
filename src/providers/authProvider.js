@@ -3,7 +3,7 @@
  */
 import firebase from "firebase/app";
 import "firebase/auth";
-
+import { useDataProvider, useQuery, Loading, Error } from 'react-admin';
 const config = {
     apiKey: "AIzaSyC5rbBe3yb-WJeP_8cNDwn6tRJamRiCBxk",
     authDomain: "react-dashboard-100d8.firebaseapp.com",
@@ -16,6 +16,7 @@ const config = {
 firebase.initializeApp(config);
 export const auth = firebase.auth();
 console.log("auth: ", auth);
+
 export default {
     login: ({ username, password }) => {
         console.log("check login");
@@ -41,6 +42,7 @@ export default {
         localStorage.removeItem('token');
         localStorage.removeItem('UID');
         localStorage.removeItem('Email');
+        localStorage.removeItem('userID');
         return Promise.resolve();
     },
     checkError: (errorCode) => {

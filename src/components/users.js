@@ -64,7 +64,7 @@ export const UserEdit = props => (
         <SimpleForm>
             <TextInput source="name"/>
             <TextInput source="phone"/>
-            <TextInput source="phoneemail"/>
+            <TextInput source="email"/>
 
         </SimpleForm>
     </Edit>
